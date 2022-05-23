@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.419,C:\Users\Dima\AppData\Local\Temp\Rar$DRa7260.24943\winApi_lesson\DllLib\Source.def=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.565,=C:\Users\Dima\AppData\Local\Temp\Rar$DRa7260.24943\winApi_lesson\DllLib\Source.def</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.524,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\Source.def=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.821,=C:\Users\Dima\AppData\Local\Temp\Rar$DRa7260.22400\winApi_lesson\DllLib\Source.def</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.619,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\DLLPCH1.h=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\Header.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.859,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\File4.cpp=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\DLL.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.631,C:\Users\Dima\AppData\Local\Temp\Rar$DRa7260.22400\winApi_lesson\DllLib\Source.def=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.456,=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\Source.def</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.813,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\File4.cpp=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\File4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.590,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\DLLPCH1.h=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\DLLPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.962,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\DLL.cbproj=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\DLL.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.639,=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\File4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.161,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project5.cbproj=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\DLL.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.618,=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.159,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project5PCH1.h=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\DLLPCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>
