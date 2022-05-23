@@ -1,0 +1,26 @@
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+#include <iostream>
+#include "Header.h"
+#include "DLL.cpp"
+
+extern "C" __declspec(dllimport)  int _libmain( int a, int b);
+
+int _tmain(int argc, _TCHAR* argv[])
+
+	_libmain();
+
+    std::cout<<result<<"\n";
+
+	std::system("pause");
+	return 0;
+}

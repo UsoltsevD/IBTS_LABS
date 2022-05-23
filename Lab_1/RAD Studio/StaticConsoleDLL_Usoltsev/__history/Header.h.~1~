@@ -1,0 +1,6 @@
+#ifdef _WIN32
+#include <tchar.h>
+#endif
+
+
+extern "C" int _libmain(unsigned long reason);

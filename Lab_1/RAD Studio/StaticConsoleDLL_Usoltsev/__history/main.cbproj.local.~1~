@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.083,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\File4.cpp=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.064,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\main.cpp=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\main.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.511,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project6.cbproj=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\Project6.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.146,=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project6PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.866,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project6PCH1.h=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\Project6PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.176,=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\File4.cpp</Transaction>
+    <Transaction>2022.03.06 01:17:26.331,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\mainPCH1.h=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\Project6PCH1.h</Transaction>
+    <Transaction>2022.03.06 01:17:26.338,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\main.cbproj=D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\DLL\Project6.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

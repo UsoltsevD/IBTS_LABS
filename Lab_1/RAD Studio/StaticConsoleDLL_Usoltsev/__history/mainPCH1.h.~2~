@@ -1,0 +1,6 @@
+#ifdef _WIN32
+#include <tchar.h>
+#endif
+
+extern "C" __declspec(dllimport)  int _libmain();
+extern "C" __declspec(dllimport)  std::string printFIO();
