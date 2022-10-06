@@ -1,0 +1,21 @@
+DLL/RAD Studio/DynamicDLL_Usoltsev/Win32/
+DLL/RAD Studio/DynamicDLL_Usoltsev/__astcache/
+DLL/RAD Studio/DynamicDLL_Usoltsev/__history/
+DLL/RAD Studio/DynamicDLL_Usoltsev/__recovery/
+DLL/RAD Studio/DynamicDLL_Usoltsev/*.local
+
+DLL/RAD Studio/StaticConsoleDLL_Usoltsev/Win32/
+DLL/RAD Studio/StaticConsoleDLL_Usoltsev/__astcache/
+DLL/RAD Studio/StaticConsoleDLL_Usoltsev/__history/
+DLL/RAD Studio/StaticConsoleDLL_Usoltsev/__recovery/
+DLL/RAD Studio/StaticConsoleDLL_Usoltsev/*.local
+
+DLL/Visual Studio/ConsoleApp_Usoltsev/ConsoleApp_Usoltsev/x64/
+DLL/Visual Studio/ConsoleApp_Usoltsev/x64/
+DLL/Visual Studio/ConsoleApp_Usoltsev/.vs/
+
+SQLite_Usoltsev/Win32/
+SQLite_Usoltsev/__astcache/
+SQLite_Usoltsev/__history/
+SQLite_Usoltsev/__recovery/
+SQLite_Usoltsev/*.local
