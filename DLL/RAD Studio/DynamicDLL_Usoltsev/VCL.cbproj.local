@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.072,=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.131,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\VCLPCH1.h=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.068,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\Unit2.cpp=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.068,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\Unit2.h=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.068,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\Unit2.dfm=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.133,C:\Users\Dima\Documents\Embarcadero\Studio\Projects\VCL.cbproj=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project5.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.793,=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\Project5PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.016,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\VCL.cbproj=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\VCL.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.168,D:\Загрузки\OneDrive\ИБТС Хорьков\IBTS\lab1\Rad Studio\Dynamic vcl DLL\VCLPCH1.h=C:\Users\Dima\Documents\Embarcadero\Studio\Projects\VCLPCH1.h</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.dfm"/>
+    <File Path="Unit2.h"/>
+    <File Path="VCL.cpp"/>
+    <File Path="VCLPCH1.h"/>
+  </ProjectSortOrder>
+</BorlandProject>
