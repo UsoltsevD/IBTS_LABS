@@ -14,6 +14,7 @@
 #pragma resource "*.dfm"
 TForm2 *Form2;
 
+char* intToStr(int data);
 //---------------------------------------------------------------------------
 __fastcall TForm2::TForm2(TComponent* Owner)
 	: TForm(Owner)
@@ -104,8 +105,52 @@ void __fastcall TForm2::VirtualStringTree1GetText(TBaseVirtualTree *Sender, PVir
 	};
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm2::VirtualStringTree1AddToSelection(TBaseVirtualTree *Sender,
+		  PVirtualNode Node)
+{
+	TreeNodeStruct *nodeData = (TreeNodeStruct*)VirtualStringTree1->GetNodeData(Node);
+	Edit1->Text = nodeData->origin;       //Вывод информации в строку "Источник"
+	Edit2->Text = nodeData->description;  //Вывод информации в строку "Описание"
+}
+//---------------------------------------------------------------------------
 void __fastcall TForm2::Button2Click(TObject *Sender) //Кнопка очистки таблицы
 {
 	VirtualStringTree1->Clear();
 }
 //---------------------------------------------------------------------------
+void __fastcall TForm2::Button3Click(TObject *Sender) //Кнопка удаления записи
+{
+	PVirtualNode selectedNode = VirtualStringTree1->FocusedNode;
+	VirtualStringTree1->DeleteNode(selectedNode);        //Удаление строки из окна вывода
+	int selectedNodeIndex = selectedNode->Index;         //Получение номера узла
+
+	sqlite3* DataBase;
+	int openResult = sqlite3_open16(L"..\\..\\Database\\Databases.db", &DataBase);  //Открытие базы данных
+
+	//Обработка ошибки
+	if(openResult != 0)
+	{
+		Application->MessageBox(L"Ошибка в открытии базы данных.",L"Ошибка!", MB_OK);
+		return;
+	}
+
+	selectedNodeIndex = selectedNodeIndex + 1;
+	char *buf = intToStr(selectedNodeIndex);
+	char *res = strcat("DELETE FROM Databases WHERE id = ", buf);  //Подготовка запроса
+
+	int deleteRes =  sqlite3_exec(DataBase, res, NULL, NULL , NULL);  //Удаление строки из базы данных
+	sqlite3_close(DataBase);  //Закрытие базы данных
+}
+
+//---------------------------------------------------------------------------
+//Функция перевода из int в char
+ char* intToStr(int data) {
+    std::string strData = std::to_string(data);
+
+    char* temp = new char[strData.length() + 1];
+    strcpy(temp, strData.c_str());
+
+   return temp;
+}
+//---------------------------------------------------------------------------
+
