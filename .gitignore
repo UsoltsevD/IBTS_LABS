@@ -19,3 +19,9 @@ SQLite_Usoltsev/__astcache/
 SQLite_Usoltsev/__history/
 SQLite_Usoltsev/__recovery/
 SQLite_Usoltsev/*.local
+
+MultithreadApp_Usoltsev/Win32/
+MultithreadApp_Usoltsev/__astcache/
+MultithreadApp_Usoltsev/__history/
+MultithreadApp_Usoltsev/__recovery/
+MultithreadApp_Usoltsev/*.local
