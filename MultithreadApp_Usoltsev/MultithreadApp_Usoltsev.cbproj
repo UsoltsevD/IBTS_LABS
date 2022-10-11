@@ -139,6 +139,10 @@
             <DependentOn>Unit2.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Unit3.cpp">
+            <DependentOn>Unit3.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
         <FormResources Include="Unit2.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

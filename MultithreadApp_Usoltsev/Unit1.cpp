@@ -5,6 +5,7 @@
 
 #include "Unit1.h"
 #include "Unit2.h"
+#include "Unit3.h"
 #pragma package(smart_init)
 
 //---------------------------------------------------------------------------
@@ -12,6 +13,8 @@ __fastcall Read_Thread::Read_Thread(bool CreateSuspended)
 	: TThread(CreateSuspended)
 {
 	FreeOnTerminate = true;          //Вызов деструктора по завершению работы
+	MyEvent = new TEvent(NULL, true, false, "", false);   //Создание события потока
+	ProcessThreadPtr = new ProcessThread(MyEvent, true);  //Создание второго потока и постановка в режим ожидания
 }
 //---------------------------------------------------------------------------
 
@@ -34,7 +37,7 @@ void __fastcall Read_Thread::Execute()
 	   return;
 	}
 
-	bytes = (Form2 -> Edit2 -> Text).ToInt();  //Обработка ошибки
+    bytes = (Form2 -> Edit2 -> Text).ToInt();  //Обработка ошибки
 	if (bytes < 512)
 	{
 		Application->MessageBox(L"Ошибка, блок не может быть меньше, чем 512 байт!",L"Ошибка!", MB_OK);
@@ -55,12 +58,15 @@ void __fastcall Read_Thread::Execute()
 	 return;
 	}
 
+	ProcessThreadPtr->Start();     //Запуск второго потока
+
 	DWORD bytesToRead = bytes*1024; //Сколько байтов будет считано
-	BYTE *dataBuffer = new BYTE[bytesToRead]; //Выделение памяти для переменной, куда будут записываться данные
+	BYTE *dataBuffer = new BYTE[bytesToRead]; //Выделение памяти для перемнной, куда будут записываться данные
 	DWORD bytesRead;  //Сколько байтов удалось считать
 
 	while(true)
 	{
+
 		bool readResult = ReadFile(fileHandle, dataBuffer, bytesToRead, &bytesRead, NULL);  //Чтение данных
 
 		if(readResult == false || bytesRead != bytesToRead)  //Обработка ошибки
@@ -68,8 +74,18 @@ void __fastcall Read_Thread::Execute()
 			Application->MessageBox(L"Ошибка чтения. Не удалось считать данные или количество считанных байтов не равно количеству заданных байтов на считывание.",L"Ошибка!", MB_OK);
 			break;
 		}
+
+		MyEvent->SetEvent(); //Уведомление воторого потока о готовности данных к считыванию
+		Sleep(20);
+
+		while (MyEvent->WaitFor(0) == wrSignaled) //Ожидание, пока второй поток считает данные
+		{
+			Sleep(10);
+		}
+		if(Terminated) break;   //Выход из потока чтения данных при флаге Terminated
 	}
 	CloseHandle(fileHandle);          //Закрытие диска
+	ProcessThreadPtr->Terminate();    //Остановка второго потока
 	delete ProcessThreadPtr;          //Очистка памяти
 }
 //---------------------------------------------------------------------------
