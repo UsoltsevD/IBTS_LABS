@@ -19,15 +19,26 @@
 class TForm1 : public TForm
 {
 __published:	// IDE-managed Components
+	TEdit *Edit1;
 	TLabel *Label1;
-
+	TButton *OpenDiskButton;
+	TLabel *Label3;
+	void __fastcall OpenDiskButtonClick(TObject *Sender);
 
 private:
-
+	
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
+
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+typedef struct{
+
+	unsigned long clusterNum;
+	UnicodeString   name;
+
+} TreeNodeStruct;
 //---------------------------------------------------------------------------
 #endif
