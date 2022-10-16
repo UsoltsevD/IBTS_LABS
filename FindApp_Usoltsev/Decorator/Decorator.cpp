@@ -5,7 +5,7 @@ Iterator decorator;
 
 Decorator::Decorator(Iterator iterator)
 	{
-		decorator=iterator;       //Присвоение данных в перемнной iterator во внутренню перменную декоратора
+		decorator=iterator;
 		File=iterator.File;
 		end=File.countCluster;
 		First();
